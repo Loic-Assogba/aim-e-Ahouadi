@@ -14,21 +14,25 @@ import Footer from './components/Footer';
 
 function App() {
     return (
-        <>
+        <div className="min-h-screen bg-navy text-white overflow-x-hidden">
             <Navbar />
-            <Hero />
-            <Stats />
-            <About />
-            <Expertise />
-            <Journey />
-            <Projects />
-            <Services />
-            <Vision />
-            <Testimonials />
-            <Blog />
-            <Contact />
+
+            <main>
+                <Hero />
+                <Stats />
+                <About />
+                <Expertise />
+                <Journey />
+                <Projects />
+                <Services />
+                <Vision />
+                <Testimonials />
+                <Blog />
+                <Contact />
+            </main>
+
             <Footer />
-        </>
+        </div>
     );
 }
 
