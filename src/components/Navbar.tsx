@@ -20,7 +20,6 @@ export default function Navbar() {
         };
 
         window.addEventListener('scroll', handleScroll);
-
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
@@ -35,26 +34,30 @@ export default function Navbar() {
             >
                 <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
                     {/* Logo */}
-                    <a
-                        href="#hero"
-                        className="text-gold text-xl md:text-2xl font-semibold tracking-[0.3em]"
-                    >
-                        A · AHOUADI
-                    </a>
+                    <h2 className="text-2xl font-semibold tracking-[0.3em] text-gold">
+                        <a
+                            href="#hero"
+                            className="text-gold text-xl md:text-2xl font-semibold tracking-[0.3em]"
+                        >
+                            A · AHOUADI
+                        </a>
+                    </h2>
 
                     {/* Desktop */}
                     <nav className="hidden lg:block">
                         <ul className="flex items-center gap-8">
                             {navLinks.map((link) => (
                                 <li key={link.href}>
-                                    <a
-                                        href={link.href}
-                                        className="group relative text-sm uppercase tracking-[0.2em] text-white/70 transition hover:text-gold"
-                                    >
-                                        {link.label}
+                                    <h2>
+                                        <a
+                                            href={link.href}
+                                            className="group relative text-sm uppercase tracking-[0.2em] text-gold/60 transition hover:text-gold"
+                                        >
+                                            {link.label}
 
-                                        <span className="absolute -bottom-2 left-0 h-[1px] w-0 bg-gold transition-all duration-300 group-hover:w-full"></span>
-                                    </a>
+                                            <span className="absolute -bottom-2 left-0 h-[1px] w-0 bg-gold transition-all duration-300 group-hover:w-full" />
+                                        </a>
+                                    </h2>
                                 </li>
                             ))}
                         </ul>
@@ -82,13 +85,13 @@ export default function Navbar() {
             <div
                 onClick={() => setIsOpen(false)}
                 className={`fixed inset-0 z-50 bg-black/50 backdrop-blur-sm transition-all duration-300 lg:hidden ${
-                    isOpen ? 'visible opacity-100' : 'invisible opacity-0'
+                    isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
                 }`}
             />
 
             {/* Mobile menu */}
             <aside
-                className={`fixed right-0 top-0 z-[60] h-screen w-[80%] max-w-sm bg-navy border-l border-gold/20 transition-all duration-500 lg:hidden ${
+                className={`fixed right-0 top-0 z-[60] h-screen w-[80%] max-w-sm bg-navy border-l border-gold/20 transition-transform duration-500 lg:hidden ${
                     isOpen ? 'translate-x-0' : 'translate-x-full'
                 }`}
             >
@@ -109,7 +112,7 @@ export default function Navbar() {
                                 <a
                                     href={link.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="block border-b border-white/5 px-8 py-5 text-sm uppercase tracking-[0.2em] text-white/80 transition hover:bg-gold/10 hover:text-gold"
+                                    className="block border-b border-white/5 px-8 py-5 text-sm uppercase tracking-[0.2em] text-white/70 transition hover:bg-gold/10 hover:text-gold"
                                 >
                                     {link.label}
                                 </a>
