@@ -150,8 +150,9 @@ export default function Footer() {
                         réservés.
                     </p>
 
-                    <p className="text-sm text-white/40">
-                        Design & Développement par Loïc Assogba
+                    <p className="text-sm text-center text-white/40">
+                        Design & Développement par Loïc ASSOGBA <br />{' '}
+                        DigitalSociety
                     </p>
                 </div>
             </div>
