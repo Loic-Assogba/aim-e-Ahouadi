@@ -129,7 +129,7 @@ export default function Contact() {
                                     </h3>
 
                                     <p className="mt-2 text-white/60">
-                                        +229 XX XX XX XX
+                                        +229 01 63 88 11 10
                                     </p>
                                 </div>
                             </div>
