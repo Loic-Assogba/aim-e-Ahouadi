@@ -151,8 +151,11 @@ export default function Footer() {
                     </p>
 
                     <p className="text-sm text-center text-white/40">
-                        Design & Développement par Loïc ASSOGBA <br />{' '}
-                        DigitalSociety
+                        Développé par{' '}
+                        <a href="https//:loicassogba.vercel.app">
+                            Loïc ASSOGBA
+                        </a>{' '}
+                        <br /> DigitalSociety
                     </p>
                 </div>
             </div>
