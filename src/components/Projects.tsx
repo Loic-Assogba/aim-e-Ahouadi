@@ -34,10 +34,10 @@ const projects = [
     },
 ];
 
-export default function Projects() {
+export default function Realisations() {
     return (
         <section
-            id="projects"
+            id="realisations"
             className="relative overflow-hidden bg-navy py-24 px-6 lg:px-10"
         >
             {/* glow */}
