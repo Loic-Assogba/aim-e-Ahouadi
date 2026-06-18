@@ -12,31 +12,73 @@ export default function Stats() {
     return (
         <section
             id="stats"
-            className="relative overflow-hidden bg-navy py-24 px-6 lg:px-10"
+            className="
+                relative
+                overflow-hidden
+                bg-navy
+                py-16
+                sm:py-20
+                lg:py-24
+                px-4
+                sm:px-6
+                lg:px-10
+            "
         >
             {/* Glow */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.08),transparent_70%)]" />
 
             <div className="relative mx-auto max-w-7xl">
+                {/* Heading */}
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="mb-16 text-center"
+                    className="mb-12 sm:mb-16 text-center"
                 >
-                    <h2 className="text-3xl md:text-4xl font-semibold uppercase tracking-[0.25em] text-gold">
+                    <h2
+                        className="
+                            text-2xl
+                            sm:text-3xl
+                            md:text-4xl
+                            font-semibold
+                            uppercase
+                            tracking-[0.15em]
+                            sm:tracking-[0.25em]
+                            text-gold
+                        "
+                    >
                         Impact
                     </h2>
 
-                    <p className="mx-auto mt-4 max-w-2xl text-white/60">
+                    <p
+                        className="
+                            mx-auto
+                            mt-4
+                            max-w-2xl
+                            text-sm
+                            sm:text-base
+                            text-white/60
+                            leading-relaxed
+                        "
+                    >
                         Des résultats concrets obtenus grâce à l'engagement,
                         l'innovation et l'accompagnement des jeunes et des
                         organisations.
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-5">
+                {/* Stats Grid */}
+                <div
+                    className="
+                        grid
+                        grid-cols-1
+                        sm:grid-cols-2
+                        lg:grid-cols-5
+                        gap-4
+                        sm:gap-5
+                    "
+                >
                     {stats.map((stat, index) => (
                         <motion.div
                             key={stat.label}
@@ -51,13 +93,46 @@ export default function Stats() {
                                 y: -10,
                                 scale: 1.03,
                             }}
-                            className="group rounded-xl border border-gold/10 bg-white/[0.02] p-6 text-center backdrop-blur-sm transition-all hover:border-gold/40"
+                            className="
+                                group
+                                rounded-xl
+                                border
+                                border-gold/10
+                                bg-white/[0.02]
+                                p-5
+                                sm:p-6
+                                text-center
+                                backdrop-blur-sm
+                                transition-all
+                                hover:border-gold/40
+                            "
                         >
-                            <h3 className="mb-3 text-3xl font-bold text-gold md:text-4xl">
+                            <h3
+                                className="
+                                    mb-3
+                                    text-3xl
+                                    sm:text-4xl
+                                    font-bold
+                                    text-gold
+                                "
+                            >
                                 {stat.value}
                             </h3>
 
-                            <p className="text-xs md:text-sm uppercase tracking-[0.15em] text-white/60 transition group-hover:text-white/80">
+                            <p
+                                className="
+                                    text-[11px]
+                                    sm:text-xs
+                                    md:text-sm
+                                    uppercase
+                                    tracking-[0.1em]
+                                    sm:tracking-[0.15em]
+                                    text-white/60
+                                    leading-relaxed
+                                    transition
+                                    group-hover:text-white/80
+                                "
+                            >
                                 {stat.label}
                             </p>
                         </motion.div>
