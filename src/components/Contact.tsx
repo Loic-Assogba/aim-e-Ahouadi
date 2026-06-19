@@ -107,7 +107,7 @@ export default function Contact() {
                                     </h3>
 
                                     <p className="mt-2 text-white/60">
-                                        contact@aime-ahouadi.com
+                                        ahouadiaime56@gmail.com
                                     </p>
                                 </div>
                             </div>
