@@ -110,21 +110,21 @@ export default function Footer() {
 
                         <div className="flex flex-wrap gap-4">
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/aimeahouadi"
                                 className="rounded-full border border-white/10 p-3 text-white/60 transition-all hover:border-gold hover:text-gold"
                             >
                                 <FaLinkedin size={18} />
                             </a>
 
                             <a
-                                href="#"
+                                href="https://www.facebook.com/ahouadi0"
                                 className="rounded-full border border-white/10 p-3 text-white/60 transition-all hover:border-gold hover:text-gold"
                             >
                                 <FaFacebook size={18} />
                             </a>
 
                             <a
-                                href="#"
+                                href="https://www.instagram.com/aime.ahouadi"
                                 className="rounded-full border border-white/10 p-3 text-white/60 transition-all hover:border-gold hover:text-gold"
                             >
                                 <FaInstagram size={18} />
