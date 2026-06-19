@@ -97,7 +97,7 @@ export default function Footer() {
                                 className="inline-flex items-center gap-2 transition hover:text-gold"
                             >
                                 <MdEmail size={16} />
-                                contact@aime-ahouadi.com
+                                ahouadiaime56@gmail.com
                             </a>
                         </div>
                     </div>
