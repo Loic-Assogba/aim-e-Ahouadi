@@ -114,7 +114,7 @@ export default function About() {
                                 </strong>{' '}
                                 grandit dans un environnement qui lui enseigne
                                 très tôt la valeur du collectif et la puissance
-                                de l’initiative individuelle.
+                                de l'initiative individuelle.
                             </p>
 
                             <p>
@@ -123,7 +123,7 @@ export default function About() {
                                     AYIHA BOOST BEN/AFRIQUE
                                 </strong>
                                 , il développe des initiatives dédiées à
-                                l’accompagnement des jeunes, à la communication
+                                l'accompagnement des jeunes, à la communication
                                 stratégique et au développement des territoires.
                             </p>
 
