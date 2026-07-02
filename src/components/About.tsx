@@ -136,8 +136,8 @@ export default function About() {
 
                             <p>
                                 Mentor, conférencier et entrepreneur social, il
-                                a déjà accompagné des centaines de jeunes vers
-                                des opportunités concrètes.
+                                a déjà accompagné plusieurs jeunes vers des
+                                opportunités concrètes.
                             </p>
                         </div>
 
